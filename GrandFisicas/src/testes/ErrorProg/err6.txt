@@ -1,0 +1,10 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+real d = 1.6;
+velocidade x = (velocidade)10.1;
+
+tempo y = (tempo)10.9;
+// soma de operandos de dimensoes diferentes
+tempo o = y + x;

@@ -1,0 +1,7 @@
+distancia [m]:REAL;
+tempo[s]:REAL;
+velocidade [m/s] : REAL;
+
+massa [g]: REAL;
+
+unidadeawesome [ua]: INTEGER;

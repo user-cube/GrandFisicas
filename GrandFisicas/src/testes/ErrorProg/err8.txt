@@ -1,0 +1,9 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+temperatura temp = (temperatura)4.8;
+temperatura t = (temperatura)2.0;
+
+// atribuicao de valor a uma variavel nao existente
+f = temp*t;

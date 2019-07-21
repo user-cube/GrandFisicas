@@ -1,0 +1,23 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+distancia di = input "Insira distancia: ";
+
+tempo te = input "Tempo: ";
+
+integer j = input "Insira um inteiro: ";
+print j;
+
+velocidade dpt = di / te;
+
+print "distancia inserida";
+print di;
+print "tempo inserido";
+print te;
+print "velocidade resultante (distancia/tempo): ";
+print dpt;
+
+unidadeawesome unia = input "Insira unidadeawesome: ";
+print "valor inserido: ";
+print unia;

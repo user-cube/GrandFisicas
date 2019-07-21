@@ -1,0 +1,8 @@
+err1 -> real nao pode ser atribuido a um inteiro
+err2 -> atribuicao de um real a uma dimensao do que so aceita valores inteiros
+err3 -> variavel com uma dimensao que nao foi importada/nao existe
+err4 -> atribuicao de uma velocidade a um tempo: dimensoes diferentes sao incompativeis
+err5 -> criacao de variavel com o mesmo nome de uma ja existente, mesmo com dimensao diferente
+err6 -> soma de operandos de dimensoes diferentes
+err7 -> uso de uma variavel nao definida numa operacao
+err8 -> atribuicao de valor a uma variavel nao existente

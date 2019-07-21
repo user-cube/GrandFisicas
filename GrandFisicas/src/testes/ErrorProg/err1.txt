@@ -1,0 +1,9 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+integer d = 1.0; // real nao pode ser atribuido a um inteiro
+velocidade x = (velocidade)10;
+velocidade z = (velocidade)20;
+velocidade w = d*x;
+tempo t = d*x;

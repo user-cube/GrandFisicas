@@ -1,0 +1,11 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+real d = 1.2;
+velocidade x = (velocidade)10.1;
+velocidade z = (velocidade)20.4;
+
+tempo t = (tempo)1.2;
+// atribuicao de uma velocidade a um tempo: dimensoes diferentes sao incompativeis
+t = d*x;

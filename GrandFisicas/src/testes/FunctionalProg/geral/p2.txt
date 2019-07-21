@@ -1,0 +1,18 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+print "Welcome!";
+
+real r = 1.6;  // definicao variavel adimensional e print da mesma
+print "variavel real: ";
+print r;
+
+r = 1.2; // redefinicao de valor de variavel
+
+real ra = 2.1;
+integer i = 2;
+
+input "Insira um valor inteiro: "; //este input será sc.nextInt() por causa da linha 13
+
+print input "Insira outro valor inteiro (este eu mostro-lhe de volta!): ";

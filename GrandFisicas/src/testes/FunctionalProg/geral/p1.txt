@@ -1,0 +1,83 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+print "Welcome!";
+
+real r = 1.6;  // definicao variavel adimensional e print da mesma
+print "variavel real: ";
+print r;
+
+r = 1.2; // redefinicao de valor de variavel
+
+real ra = 2.1;
+integer i = 2;
+
+input "Insira um valor inteiro: "; //este input será sc.nextInt() por causa da linha 13
+
+print input "Insira outro valor inteiro (este eu mostro-lhe de volta!): ";
+
+velocidade v = (velocidade)10.1;
+velocidade va = (velocidade)20.8;
+velocidade vb = r*v; 
+
+tempo t = r*(tempo)2;
+
+while ( v < va ){
+    v = v + (velocidade)1;
+}
+
+print "ciclo while: incremento de 1 à velocidade 10.1 até ser maior que 20.8";
+print v;
+
+tempo ta = (tempo)10.9;
+tempo tb = ta + t;
+
+print "resultado de tempo 10.9 + 2.4";
+print tb;
+
+tempo tc = (tempo)12.4;
+
+velocidadevelocidade vv = v * v; // var nao existente
+
+
+if ( t == ta ){
+    print "entrou num if";
+    print -20;
+}else{
+    print "entrou no else";
+    print(10);
+}
+
+
+if( vv == v*va ){
+    tc = (tempo)13.7;
+}
+
+if(true){
+    tc = (tempo)3 + (tc - (tempo)2.3);
+}
+
+if(true OR v==v AND tc==(tempo)3){
+    print "Almost done :)";
+}
+
+distancia di = input "Insira distancia: ";
+
+tempo te = input "Tempo: ";
+
+integer j = input "Insira um inteiro: ";
+print j;
+
+velocidade dpt = di / te;
+
+print "distancia inserida";
+print di;
+print "tempo inserido";
+print te;
+print "velocidade resultante (distancia/tempo): ";
+print dpt;
+
+unidadeawesome unia = input "Insira unidadeawesome: ";
+print "valor inserido: ";
+print unia;

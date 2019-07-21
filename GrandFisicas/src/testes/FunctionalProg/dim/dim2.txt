@@ -1,0 +1,4 @@
+distancia [m]:REAL;
+tempo[s]:REAL;
+
+temperatura [t]:REAL;

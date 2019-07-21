@@ -1,0 +1,198 @@
+booleanValue ::= [
+    "true":"true",
+    "false":"false",
+    default:"null"
+]
+
+typeValue ::= [
+    "integer":"int",
+    "real":"double",
+    "boolean":"boolean",
+    default:"null"
+]
+
+
+typeFormat ::= [
+    "integer":"",
+    "real":"",
+    "boolean":"",
+    default:"null"
+]
+
+operators ::= [
+    "*":"*",
+    "/":"/",
+    "//":"/",
+    "\\\\":"%",
+    "+":"+",
+    "-":"-",
+    "=":"=",
+    "/=":"!=",
+    default:"null"
+]
+
+
+
+// templates:
+
+main(head,body) ::= <<
+import java.util.*;
+<head>
+<body>
+    
+>>
+
+head(library_name) ::= << 
+// import <library_name; separator="\n">;
+>>
+
+
+body(className,stat) ::= << 
+public class <className> {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        <stat>
+        sc.close();
+    }
+}
+>>
+
+statLinha(linha, end) ::= <<
+<linha><end>
+>>
+
+statIf(condicaoIf) ::= <<
+<condicaoIf>
+>>
+
+linhaAttr(atribuicao) ::= <<
+<atribuicao>
+>>
+
+linhaConta(conta, possivelPrint) ::= <<
+<possivelPrint>
+<conta>
+>>
+
+
+attrDefined(word, conta, possivelPrint) ::= <<
+<possivelPrint>
+<word> = <conta>
+>>
+
+attrGrandeza(grandeza, var, conta, possivelPrint) ::= <<
+<possivelPrint>
+<typeValue.(grandeza)> <var> = <conta>
+>>
+
+attrPrimitivo(type, word, conta, possivelPrint) ::= <<
+<possivelPrint>
+<typeValue.(type)> <word> = <conta>
+>>
+
+grandeza(gr) ::= <<
+<typeValue.(gr)>
+>>
+
+paranthesis(conta) ::= <<
+(<conta>)
+>>
+
+contaMultDiv(conta1, op, conta2) ::= <<
+<conta1> <operators.(op)> <conta2>
+>>
+
+contaSumSub(conta1, op, conta2) ::= <<
+<conta1> <operators.(op)> <conta2>
+>>
+
+valorVariavel(id) ::= <<
+<id>
+>>
+
+valorNumero(numero) ::= <<
+<numero>
+>>
+
+valorNumeroNeg(numeroNeg) ::= <<
+-<numeroNeg>
+>>
+
+
+condicaoif(condicao, stat) ::= <<
+if(<condicao>){
+	<stat>
+}
+
+>>
+
+condicaoifElif(condicao, stat, condicaoElif, condicaoElse) ::= <<
+if(<condicao>){
+	<stat>
+}<condicaoElif>
+<condicaoElse>
+>>
+
+condicaoifElse(condicao, stat, condicaoElse) ::= <<
+if(<condicao>){
+	<stat>
+}<condicaoElse>
+>>
+
+condicaoElif(condicao, stat) ::= <<
+else if(<condicao>){
+    <stat>
+}
+
+>>
+
+condicaoElse(stat) ::= <<
+else{
+    <stat>
+}
+
+>>
+
+condicaoWhile(condicao, stat) ::= <<
+while(<condicao>){
+	<stat>
+}
+
+>>
+
+
+condicaoAnd(condicao1, condicao2) ::= <<
+<condicao1> && <condicao2> 
+>>
+
+condicaoOr(condicao1, condicao2) ::= <<
+<condicao1> || <condicao2> 
+>>
+
+paranthesisCondicao(condicao) ::= <<
+(<condicao>)
+>>
+
+condicaoBoolean(op) ::= <<
+<op>
+>>
+
+
+comparacao(conta1, op, conta2) ::= <<
+<conta1> <op> <conta2>
+>>
+
+
+print(string, possivelPrint) ::= <<
+<possivelPrint>
+System.out.println(<string>)
+>>
+
+
+inputDouble() ::= <<
+sc.nextDouble()
+>>
+
+inputInt() ::= <<
+sc.nextInt()
+>>

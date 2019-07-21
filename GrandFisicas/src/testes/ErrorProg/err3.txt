@@ -1,0 +1,9 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+
+velocidade x = (velocidade)10.2;
+
+// variavel com uma dimensao que nao foi importada/nao existe
+potencia p = (potencia)17;

@@ -1,0 +1,6 @@
+
+integer d = 4;
+integer i = 2;
+
+// uso de uma variavel nao definida numa operacao
+integer f = x + 1;

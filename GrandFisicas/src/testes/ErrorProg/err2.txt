@@ -1,0 +1,9 @@
+import testes/FunctionalProg/dim/dim1.txt;
+import testes/FunctionalProg/dim/dim2.txt;
+
+
+
+unidadeawesome x = (unidadeawesome)10.1; // atribuicao de um real a uma dimensao do que so aceita valores inteiros
+
+
+
